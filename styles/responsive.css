@@ -1,3 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+/* font-family: 'Miama', sans-serif; */
 body{
-    background-color: red;
+    margin: 0px;
+    font-family: Inter;
+}
+
+/* shared class */
+.display-f{
+    display: flex
+}
+.orange{
+    color: #E6533C;
+}
+
+/* header banner */
+.banner-container{
+    background-image: linear-gradient(black,#777777);
+    justify-content: center;
+}
+.banner-holder{
+    /* padding: 57px 190px; */
+    width: 73.6%;
+    margin-top: 57px;
+}
+
+nav{
+   justify-content: space-between; 
+   align-items: center;
+   border: 30px 40px 20px;
+   /* max-width: 1440px; */
+}
+nav > h2{
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+    font-size: 2.25rem;
+}
+nav > ul{
+    list-style: none;
+    /* padding: 12px 24px 12px; */
+    padding: 4px 24px 4px 4px;
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 39px;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+nav >ul > li > a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+#gap-nav{
+    margin-right: 20px;
+}
+.selected-nav{
+    background-color: #E6533C;
+    padding: 8px 20px;
+    /* border: 8px 20px solid E6533C; */
+    border-radius: 46px;
+
+}
+.mobile-img{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    #nav-elements{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+    }
+    .banner-holder{
+        width: 90%;
+        margin-top: 52px;
+    }
 }
