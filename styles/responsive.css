@@ -4,6 +4,7 @@
 /* font-family: 'Miama', sans-serif; */
 body{
     margin: 0px auto;
+    color: white;
     font-family: Inter, sans-serif;
     background-color: #000000;
 }
@@ -216,6 +217,56 @@ nav >ul > li > a{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.125rem;
 }
+
+/* chamge-habit section */
+.habit-container{
+    width: 73.6%;
+    margin: 60px auto 0px;
+}
+.habit-info{
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid greenyellow;
+    text-align: center;
+}
+.habit-info > h1{
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+.habit-info > p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin: 14px auto 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.habit-card-container{
+    margin-top: 58px;
+}
+.habit-card-header{
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 30px 0 6px;
+}
+.habit-card-detail{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin: 0;
+}
+.habit-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted brown;
+    margin: 0 auto;
+    text-align: center;
+}
+.habit-img{
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (max-width: 576px) {
     #nav-elements{
         display: none;
@@ -247,5 +298,13 @@ nav >ul > li > a{
         top: -565px;
         left: 115px;    
         width: 173px;
+    }
+    /* change habit */
+    .habit-container{
+        width: 100%;
+    }
+    .habit-card-container{
+        gap: 40px;
+        flex-direction: column;
     }
 }
