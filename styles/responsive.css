@@ -3,8 +3,9 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 /* font-family: 'Miama', sans-serif; */
 body{
-    margin: 0px;
-    font-family: Inter;
+    margin: 0px auto;
+    font-family: Inter, sans-serif;
+    background-color: #000000;
 }
 
 /* shared class */
@@ -14,23 +15,52 @@ body{
 .orange{
     color: #E6533C;
 }
+.white-2{
+    color: rgba(255, 255, 255, .5);
+}
+.main-btn{
+    /* height: 54px;
+    width: 224px; */
+    border: 0px;
+    background-color: #E6533C;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 42px;
+    padding: 16px 46.5px;
+    border: 1px solid #E6533C;
+    font-size: 1.125rem;
+    color: white;
+}
+.banner-widget{
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 /* header banner */
 .banner-container{
-    background-image: linear-gradient(black,#777777);
+    background-image: linear-gradient(black,#777777,black);
+    background-image: linear-gradient(to bottom, #000000, #0d0d0d, #161616, #1d1d1d, #252525, #252525, #252525, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
     justify-content: center;
+    
+    /* background-image: linear-gradient(rgb(0, 0, 0), rgb(59, 58, 58), rgb(13, 13, 13), black, black, black, black, black, black); */
 }
 .banner-holder{
     /* padding: 57px 190px; */
     width: 73.6%;
     margin-top: 57px;
+    max-width: 1440px;
+    margin: 0 auto;
+    max-height: 700px;
 }
 
 nav{
+   
+   border-bottom: 0px;
+   border-color: aqua;
+   border-style: dashed;
    justify-content: space-between; 
    align-items: center;
-   border: 30px 40px 20px;
-   /* max-width: 1440px; */
+ 
+   
 }
 nav > h2{
     font-weight: 800;
@@ -71,6 +101,121 @@ nav >ul > li > a{
     display: none;
 }
 
+
+
+        /* Banner-Info and Image */
+.banner-right{
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted rgb(195, 8, 173);
+    width: 100%;
+    
+    align-items: end;
+}
+.banner-img{
+    /* background-image: url("../images/Images\ 2.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 90%; */
+    /* background-size:cover; */
+    border: 1px dotted rgb(0, 60, 255);
+    /* width: 36%; */
+    
+}
+.banner-info{
+    /* gap: 168px; */
+    /* flex-direction: column; */
+    /* gap:15%; */
+    justify-content: space-between;
+    /* height: auto; */
+    /* max-height: 590px;; */
+    border: 2px dotted rgb(22, 163, 0);
+}
+.banner-blog{
+    width: 100%;
+    border: 1px solid rgb(255, 247, 0);
+    margin-bottom: 76px;
+}
+
+.banner-info-header{
+    /* font-size: 4.875rem; */
+    font-size: 4.875rem;
+    color: white;
+    font-weight: 900;
+    border: 1px solid red;
+    margin-bottom: 28px;
+    width: 100%;
+}
+#font-miami{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+}
+.banner-info-detail{
+    font-size: 1.01rem;
+    margin-bottom: 28px;
+}
+.banner-btns{
+    display: flex;
+    gap: 12px;
+}
+
+#btn-2{
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#widget-2{
+    height: 98px;
+    width: 193px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -455px;
+    left: 74px;
+}
+#widget-2 > h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 16px 0px 0px 23px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+#widget-2 > p{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 0px 16px 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#widget-1{
+    padding: 15px 23px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -257px;
+    right: 256px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.play-btn{
+    width: 100%;
+    /* padding-left: 23px; */
+}
+.play-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-packet > h1{
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+.banner-packet > p{
+    margin: 5px 0px 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.125rem;
+}
 @media screen and (max-width: 576px) {
     #nav-elements{
         display: none;
@@ -81,5 +226,26 @@ nav >ul > li > a{
     .banner-holder{
         width: 90%;
         margin-top: 52px;
+        max-height:none;
+    }
+    .banner-info{
+        flex-direction: column;
+    }
+    .banner-right{
+        align-items: center;
+        max-height: 584px;
+    }
+    .banner-img{
+        
+        height: 100%;
+    }
+    #widget-1{
+        top: -257px;
+        right: 106px; 
+    }
+    #widget-2{
+        top: -565px;
+        left: 115px;    
+        width: 173px;
     }
 }
