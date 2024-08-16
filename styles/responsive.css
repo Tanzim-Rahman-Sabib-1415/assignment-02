@@ -56,8 +56,8 @@ body{
 nav{
    
    border-bottom: 0px;
-   border-color: aqua;
-   border-style: dashed;
+   /* border-color: aqua;
+   border-style: dashed; */
    justify-content: space-between; 
    align-items: center;
  
@@ -428,10 +428,74 @@ input::placeholder{
     /* padding-top: 13px; */
     /* padding-left: 20px; */
 }
-
+#bmi-option, #bmi-option2{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+}
+/* #bmi-option2{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+} */
 .bmi-btn{
     width: 39%;
 }
+
+
+
+/* Team Section */
+#team-id{
+    margin-top: 88px;
+    /* margin-bottom: 58px; */
+}
+
+/* team group photos */
+.team-album{
+    /* margin-top: 58px; */
+    margin: 58px auto 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.1);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+}
+.trainer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    height: 272px;
+    padding-left: 19px;
+    padding-bottom: 15px;
+}
+#t-id1{ background-image: url("../images/trainer1.png"); }
+#t-id2{ background-image: url("../images/trainer2.png"); }
+#t-id3{ background-image: url("../images/trainer3.png"); }
+#t-id4{ background-image: url("../images/trainer4.png"); 
+        background-position: left 55% bottom 0%;}
+#t-id5{ background-image: url("../images/trainer5.png"); 
+        background-position-y: 50%;}
+#t-id6{ background-image: url("../images/trainer6.png"); }
+
+.trainer-name{
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.trainer-deg{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
 @media screen and (max-width: 576px) {
     #nav-elements{
         display: none;
@@ -515,4 +579,10 @@ input::placeholder{
     .bmi-2{
         margin-bottom: 34px;
     }
+    /* albums */
+    .team-album{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 37px 20px 66px;
+    }
+    
 }
