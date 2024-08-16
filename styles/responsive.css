@@ -571,12 +571,12 @@ input::placeholder{
     width: 73.6%;
     margin: 90px auto 10px;
 }
-.p-holder{
+.personal-holder{
     justify-content: space-around;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 18px;
 }
-.p-cards{
+.personal-cards{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,14 +588,14 @@ input::placeholder{
     padding-left: 10px;
     padding-right: 10px;
 }
-.p-img{
+.personal-img{
     transform: scale(.7);
 }
-.p-h{
+.personal-h{
     font-family: 900;
     font-size: 2.7rem;
 }
-.p-p{
+.personal-p{
     font-family: 500;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
@@ -719,7 +719,7 @@ input::placeholder{
         margin-top: 41px;
     }
 
-    .p-holder{
+    .personal-holder{
         flex-direction: column;
         width: 100%;
         padding-left: 10px;
