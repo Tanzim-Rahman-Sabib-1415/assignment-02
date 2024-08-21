@@ -568,13 +568,15 @@ input::placeholder{
 /* personal */
 .personal-container{
     /* margin: 50px auto; */
-    width: 73.6%;
+    width: 80%;
     margin: 90px auto 10px;
+    /* justify-content: center; */
 }
 .personal-holder{
     justify-content: space-around;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 18px;
+    margin: 0 auto;
 }
 .personal-cards{
     display: flex;
@@ -722,15 +724,21 @@ input::placeholder{
     .personal-holder{
         flex-direction: column;
         width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        /* justify-content: center; */
+        gap: 30px;
+        align-items: center;
     }
     .personal-container{
-        width: 90%;
+        width: 83%;
         /* margin: 0 20px; */
     }
-    .p-cards{
-        width: 100%;
+    .personal-cards{
+        width: 85%;
         padding: 0;
+    }
+    .personal-h{
+        margin-top: 0;
     }
 }
